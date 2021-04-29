@@ -1,0 +1,294 @@
+
+@font-face
+{
+  font-family: qualy ;
+  src:url("Qualy Bold.ttf");
+}
+
+html {
+    font-family: Comic Sans MS, Comic Sans, cursive ;
+    color: #143774;
+    font-size: 1rem;
+}
+/* #f8f8f8e5  */
+body {
+
+    background-color:  #cfd9e228;
+    margin: 0em;
+    padding: 0em;
+
+}
+header {
+    background-color: #cfd9e26c;
+    margin: auto;
+    
+}
+
+h1 {
+    margin: auto;
+    
+}
+img {
+    max-width: 95%;
+}
+
+/**HEADER**/
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    text-align: center;
+    width: 10%;
+    min-width: 80px;
+
+}
+.logo h1 {
+    font-family: qualy ;
+    font-size: 2rem;
+    padding: 0.25em;
+}
+
+nav ul {
+
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li {
+margin-left: 2em;
+}
+nav a {
+    text-decoration: none;
+    color: #1792d2;
+    font-weight: 600;
+    padding: .15em 0;
+}
+nav a:hover , nav a:focus {
+    color: #143774;
+}
+.current-page {
+    border-bottom: 1px solid #1792d2;
+}
+.current-page:hover {
+    color: #1792d2;
+}
+/* .menu a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+
+.menu a:hover {
+    background: #41545f91;
+}
+
+.submenu li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.menu li:hover .submenu > li {
+    display: block;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+} */
+/* MOBILE MENU */
+@media only screen and (max-width: 670px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+    }
+    .toggle{
+        order: 1;
+
+    }
+
+
+    .item{
+        width: 100%;
+        text-align: left;
+        display: none;  
+        order: 2;
+        padding: .5em;
+
+    }
+    .item.active {
+        display: inline-block;
+    }
+    .toggle {
+        cursor: pointer;
+    }
+
+
+
+    .bars {
+        background: #999;
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        width: 18px;
+    }
+    .bars::before, .bars::after {
+        background: #999;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: absolute;
+        width: 18px;
+    }
+    .bars::before {
+        top: 5px;
+    }
+    .bars::after {
+        top: -5px;
+    }
+}
+/* END OF MOBILE MENU */
+
+/**MAIN PART PAGE GUESS THE MOVIE**/
+
+.quiz-container {
+    border: #5896a6a4 solid;
+    background-color: #e0c9b748 ;
+    color: #064858c9;
+    width: 70%;
+    max-width: 700px;
+    margin: 3em auto;
+    padding: 2em;
+    font-size: 1rem;
+    text-align: center;
+
+}
+.quiz-container h4 {
+    color: #06475793;
+}
+
+.answer-container{
+    display: grid ;
+    width: 60%;
+    margin: 1em auto;
+}
+.answer {
+    margin:  .5em ;
+    padding: .5em;
+    font-size: 1.5rem;
+}
+
+/*MAIN PART INDEX PAGE */
+
+.box-container {
+    margin: 3em auto;
+    width: 80%;
+    color: #18428ad2;
+
+}
+.columns {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col {
+    font-size: 0.5rem;
+    margin: 1.5em 1.5em;
+    flex: 25%;
+    text-align: center;
+}
+.img-text {
+    position: relative;
+    display: inline-block;
+}
+.img-text img {
+    min-width: 288px;
+    max-width: 350px;
+    width: 100%;
+    opacity: 0.3;
+    height: 270px;
+    border: #064858 solid .2em;
+
+}
+.guess {
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .play {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #f25e3d;
+    border: #f25e3d91 solid .06em;
+    font-size: 1.3rem;
+    padding: 0.15em 4.3em;
+    background-color: #e9dccc50;
+}
+
+.sort-by {
+
+    background-color: rgba(204, 240, 241, 0.452);
+    font-size: 1.5rem;
+    border: rgba(95, 158, 160, 0.603) solid;
+    padding: 0.25em 0.5em 0.25em 0.25em;
+    font-style: italic;
+    font-weight: bolder;
+} */
+
+
+
+
+/* @media all and (min-width: 960px) {
+    .guess{
+        font-size: 30px;
+      }
+    }
+    
+    @media all and (max-width: 959px) and (min-width: 600px) {
+    .guess{
+        font-size: 3vw;
+      }
+    }
+    
+    @media all and (max-width: 599px) and (min-width: 50px) {
+    .guess{
+        font-size: 6vw;
+      }
+    } */
+
+    @media ( max-width: 795px) {
+        .guess {
+            font-size:26px;
+        }
+    }
+
+    @media ( max-width: 795px) {
+        .answer {
+            font-size:1rem;  
+        }
+    }
